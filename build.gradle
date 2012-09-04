@@ -4,7 +4,7 @@ buildscript {
   }
 
   dependencies {
-    organization: 'com.ecovate', name: 'gradle-avian-plugin', version: '0.1.0'
+    classpath organization: 'com.ecovate', name: 'gradle-avian-plugin', version: '0.1.0'
   }
 }
 
