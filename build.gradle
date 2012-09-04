@@ -1,0 +1,16 @@
+apply plugin: 'avian'
+apply plugin: 'proguard'
+apply plugin: 'release-manager-and-repos'
+
+repositories {
+  ecovateRepos()
+}
+
+dependencies {
+  compile // avian version
+  compile // swt
+}
+
+name = 'pushup-reminder'
+organization = 'com.readytalk'
+version = '1.0.0'
