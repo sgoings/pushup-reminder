@@ -1,3 +1,14 @@
+
+buildscript {
+  repositories {
+    ecovateRepos()
+  }
+
+  dependencies {
+    organization: 'com.ecovate', name: 'gradle-avian-plugin', version: '0.1.0'
+  }
+}
+
 apply plugin: 'avian'
 apply plugin: 'proguard'
 apply plugin: 'release-manager-and-repos'
@@ -7,8 +18,8 @@ repositories {
 }
 
 dependencies {
-  compile // avian version
-  compile // swt
+  avian organization: 'com.ecovate', name: 'avian', version: '0.6.0'
+  compile organization: 'org.eclipse', name: 'swt', version: '3.7.2'
 }
 
 name = 'pushup-reminder'
